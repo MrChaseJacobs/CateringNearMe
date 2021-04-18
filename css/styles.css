@@ -4,9 +4,28 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-}
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */ }
+
+.modal-header {
+  background-color: red;
+  color: white; }
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.5rem; }
+
+.nav-link {
+  font-size: 1.5rem;
+  margin-left: 1.25rem;
+  text-transform: uppercase; }
+  .nav-link :hover {
+    color: red;
+    font-weight: bold; }
 
 #navlogo {
-  max-width: 10rem;
-}
+  max-width: 10rem; }
+
+.footer {
+  height: 10vh;
+  background-color: red; }

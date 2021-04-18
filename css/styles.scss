@@ -1,0 +1,37 @@
+.jumbotron {
+  min-height: 85vh;
+  background-image: url("https://images.unsplash.com/photo-1592231167202-a253c3c2d3fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-header {
+  background-color: red;
+  color: white;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  margin-left: 1.25rem;
+  text-transform: uppercase;
+  :hover {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+#navlogo {
+  max-width: 10rem;
+}
+
+.footer {
+  height: 10vh;
+  background-color: red;
+}
