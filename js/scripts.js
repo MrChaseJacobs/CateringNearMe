@@ -3,3 +3,7 @@ $(function () {
         $('#bookModal').modal('toggle');
     });
 });
+
+$('.carousel').carousel({
+    interval: 3500
+  })
