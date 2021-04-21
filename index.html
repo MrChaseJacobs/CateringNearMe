@@ -24,81 +24,25 @@
 
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" role="button" id="eventBtn">Types of Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Types of Events</a>
+                        <a class="nav-link" role="button" id="menuBtn">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
+                        <a class="nav-link" role="button" id="faqBtn">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" role="button" id="contactBtn">Contact Us</a>
                     </li>
                 </ul>
                 <button class="btn btn-primary btn-lg mr-5" role="button" id="bookBtn">Book Now</button>
             </div>
         </nav>
 
-        <!--Book Now Modal-->
-        <div class="modal fade" id="bookModal" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalTitle">Book Now</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="#">
-                            <div class="form-group form-control-lg form-row">
-                                <label class="col" for="contactName">Contact Name</label>
-                                <input class="col" type="text" name="contactName" id="contactName"
-                                    placeholder="Joe Smith">
-                            </div>
-                            <div class="form-group form-control-lg form-row">
-                                <label class="col" for="phoneNumber">Phone Number</label>
-                                <input class="col" type="tel" name="phoneNumber" id="phoneNumber"
-                                    placeholder="555-555-5555">
-                            </div>
-                            <div class="form-group form-control-lg form-row">
-                                <label class="col" for="eventName">Event Name</label>
-                                <input class="col" type="text" name="eventName" id="eventName"
-                                    placeholder="Smith Wedding, etc">
-                            </div>
-                            <div class="form-group form-control-lg form-row">
-                                <label class="col" for="numOfPeople">Number of Attendees</label>
-                                <input class="col" type="number" name="numOfPeople" id="numOfPeople">
-                            </div>
-                            <div class="form-group form-control-lg form-row">
-                                <label class="col" for="eventDate">Date of Event</label>
-                                <input class="col" type="datetime-local" name="eventDate" id="eventDate">
-                            </div>
-                        </form>
-                        <p class="h6 ml-3"><strong>We will contact you for menu choices & payment information.</strong>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </header>
     <main>
-        <!-- <div class="jumbotron"></div>
-        <div class="main container">
-
-        </div> -->
 
         <div id="carouselMain" class="container-fluid carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -116,7 +60,7 @@
                         class="d-block" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1586985290301-8db40143d525?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                    <img src="https://images.unsplash.com/photo-1529763898477-40a4374b072f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
                         class="d-block" id="cupcakeImg" alt="...">
                 </div>
             </div>
@@ -132,8 +76,8 @@
         <div class="container ">
             <div class="row">
                 <div class="col text-center py-5">
-                    <h1 class="display-2">Catering Made Easy</h1>
-                    <button class="btn btn-primary btn-lg py-3 px-4 mt-4" role="button" id="bookBtn">Book
+                    <h1 class="display-3">Catering Made Easy</h1>
+                    <button class="btn btn-primary btn-lg py-3 px-4 mt-4" role="button" id="bookBtnTwo">Book
                         Now</button>
                 </div>
             </div>
@@ -169,17 +113,327 @@
             </div>
             <div class="row mt-3">
                 <div class="col"></div>
-                <div class="col text-center lead"><a href="#"> See Our Full Menu &#8594;</a></div>
-                <div class="col text-center lead"><a href="#"> Contact Us &#8594;</a></div>
+                <div class="col-sm text-center"><a role="button" id="menuBtnTwo">
+                        <h2>See Our <br>Menu Items &#8594;</h2>
+                    </a></div>
+                <div class="col-sm text-center"><a role="button" id="contactBtnTwo">
+                        <h2>Contact Us &#8594;</h2>
+                    </a></div>
                 <div class="col"></div>
             </div>
         </div>
     </main>
-    <footer class="p-4">
-        <div class="footer container-fluid">
-            <p>What</p>
+    <footer class="mt-5 pt-2 text-center footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm py-3 footerText">
+                    <img src="/img/cateringLogoWhite.png" width="200rem" alt="">
+                </div>
+                <div class="col-sm mt-4 py-3 footerText">
+                    <h4>&#169; Copyright 2021, Chase Jacobs</h4>
+                </div>
+                <div class="col-sm py-3 footerText">
+                    <i class="fa-5x fab fa-facebook-square mx-2"></i>
+                    <i class="fa-5x fab fa-instagram mx-2"></i>
+                    <i class="fa-5x fab fa-youtube mx-2"></i>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!--Book Now Modal-->
+    <div class="modal fade" id="bookModal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Book Now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group form-control-lg form-row">
+                            <label class="col" for="contactName">Contact Name</label>
+                            <input class="col" type="text" name="contactName" id="contactName" placeholder="Joe Smith">
+                        </div>
+                        <div class="form-group form-control-lg form-row">
+                            <label class="col" for="phoneNumber">Phone Number</label>
+                            <input class="col" type="tel" name="phoneNumber" id="phoneNumber"
+                                placeholder="555-555-5555">
+                        </div>
+                        <div class="form-group form-control-lg form-row">
+                            <label class="col" for="eventName">Event Name</label>
+                            <input class="col" type="text" name="eventName" id="eventName"
+                                placeholder="Smith Wedding, etc">
+                        </div>
+                        <div class="form-group form-control-lg form-row">
+                            <label class="col" for="numOfPeople">Number of Attendees</label>
+                            <input class="col" type="number" name="numOfPeople" id="numOfPeople">
+                        </div>
+                        <div class="form-group form-control-lg form-row">
+                            <label class="col" for="eventDate">Date of Event</label>
+                            <input class="col" type="datetime-local" name="eventDate" id="eventDate">
+                        </div>
+                    </form>
+                    <p class="h6 ml-3"><strong>We will contact you for menu choices & payment information.</strong>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Event Type Modal-->
+    <div class="modal fade" id="eventModal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Types of Events We Work With</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-auto">
+
+                    <div class="card mx-auto" style="width: 28rem;">
+                        <img src="https://images.unsplash.com/photo-1464047736614-af63643285bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3734&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Our most popular events include:</h2>
+                            <p class="card-text lead">
+                            <ul>
+                                <li>
+                                    <h4>Birthday Parties</h4>
+                                </li>
+                                <li>
+                                    <h4>Wedding Receptions</h4>
+                                </li>
+                                <li>
+                                    <h4>Sports Parties</h4>
+                                </li>
+                                <li>
+                                    <h4>Baby Showers</h4>
+                                </li>
+                                <li>
+                                    <h4>Bridal Showers</h4>
+                                </li>
+                                <li>
+                                    <h4>Holiday Parties</h4>
+                                </li>
+                                <li>
+                                    <h4>Corporate Events</h4>
+                                </li>
+                                <li>
+                                    <h4>Graduation Parties</h4>
+                                </li>
+                            </ul>
+                            </p>
+                            <a role="button" id="bookBtnThree" class="btn btn-block btn-primary">Book Now</a>
+                        </div>
+                    </div>
+
+                    <p class="h6 ml-3"><strong>Don't see your type of event listed above? <br> That's OK! Contact us to
+                            discuss options.</strong>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Menu Modal-->
+    <div class="modal fade" id="menuModal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Our Menu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-auto">
+                    <div class="card mx-auto" style="width: 28rem;">
+                        <img src="https://images.unsplash.com/photo-1498669374702-58e97ebbede3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Appatizers:</h2>
+                            <p class="card-text lead">
+                            <ul>
+                                <li>
+                                    <h4>Chips & Salsa</h4>
+                                </li>
+                                <li>
+                                    <h4>Loaded Potato Wedges</h4>
+                                </li>
+                                <li>
+                                    <h4>Veggie & Fruit Tray</h4>
+                                </li>
+                            </ul>
+                            </p>
+
+                            <h2 class="card-title">Entrees:</h2>
+                            <p class="card-text lead">
+                            <ul>
+                                <li>
+                                    <h4>Bacon Cheeseburgers & Fries</h4>
+                                </li>
+                                <li>
+                                    <h4>Brisket Street Tacos</h4>
+                                </li>
+                                <li>
+                                    <h4>Turkey & Swiss Hoagies</h4>
+                                </li>
+                            </ul>
+                            </p>
+
+                            <h2 class="card-title">Desserts:</h2>
+                            <p class="card-text lead">
+                            <ul>
+                                <li>
+                                    <h4>Cupcake Trays</h4>
+                                </li>
+                                <li>
+                                    <h4>Cookie Trays</h4>
+                                </li>
+                            </ul>
+                            </p>
+
+                            <a role="button" id="bookBtnFour" class="btn btn-block btn-primary">Book Now</a>
+                        </div>
+                    </div>
+
+                    <p class="h6 ml-3"><strong>Do you have special dietary requirements? <br> That's OK! Contact us to
+                            discuss options.</strong>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--FAQ Modal-->
+    <div class="modal fade" id="faqModal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Frequently Asked Questions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-auto pt-2">
+                    <div class="card mx-auto" style="width: 28rem;">
+                        <img src="https://cdn.pixabay.com/photo/2016/07/04/02/37/question-mark-1495858_1280.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="my-2">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            How far in advance can I place my order?
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        You can place your order up to one month before your event.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="my-2">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Can I order catering the same day as my event?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Yes. Depending on the order size, we typically require at least a 3 hour advance
+                                        notice.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="my-2">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            When do I pay for my order?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Payment is made when we contact you to confirm your order.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a role="button" id="bookBtnFaq" class="btn btn-block btn-primary">Book Now</a>
+                    <p class="h6 mt-3 ml-3"><strong>Do you have special dietary requirements? <br> That's OK! Contact us
+                            to
+                            discuss options.</strong>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Contact Us Modal-->
+    <div class="modal fade" id="contactModal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group form-control-lg form-row">
+                            <label class="col" for="contactName">Contact Name</label>
+                            <input class="col" type="text" name="contactName" id="contactName" placeholder="Joe Smith">
+                        </div>
+                        <div class="form-group form-control-lg form-row">
+                            <label class="col" for="phoneNumber">Phone Number</label>
+                            <input class="col" type="tel" name="phoneNumber" id="phoneNumber"
+                                placeholder="555-555-5555">
+                        </div>
+                        <div class="form-group form-control-lg form-row">
+                            <label class="col" for="comment">Question / Comment:</label>
+                            <textarea name="comment" id="comment" rows="2" class="form-control"></textarea>
+                        </div>
+                    </form>
+                    <p class="h6 ml-3"><strong>We will contact you for menu choices & payment information.</strong>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>

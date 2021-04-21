@@ -53,8 +53,12 @@
 }
 
 .footer {
-  height: 10vh;
+  min-height: 15vh;
   background-color: red;
+}
+
+.footerText {
+  color: white;
 }
 
 @media (max-width: 756px) {
